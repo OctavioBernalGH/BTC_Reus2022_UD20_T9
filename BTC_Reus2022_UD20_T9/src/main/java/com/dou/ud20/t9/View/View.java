@@ -21,14 +21,15 @@ public class View {
 	private JFrame frame;
 	private final int WIDTH=100;
 	private final int HEIGHT=100;
-	public Image imgCerdo 		= new ImageIcon(this.getClass().getResource("/cerdo.png")).getImage();
-	public Image imgCalabaza 	= new ImageIcon(this.getClass().getResource("/calabaza.png")).getImage();
-	public Image imgClown	 	= new ImageIcon(this.getClass().getResource("/clown.png")).getImage();
-	public Image imgFranki	 	= new ImageIcon(this.getClass().getResource("/franki.png")).getImage();
-	public Image imgMinion	 	= new ImageIcon(this.getClass().getResource("/minion.png")).getImage();
-	public Image imgMummy	 	= new ImageIcon(this.getClass().getResource("/mummy.png")).getImage();
-	public Image imgSeta	 	= new ImageIcon(this.getClass().getResource("/seta.png")).getImage();
-	public Image imgSkull	 	= new ImageIcon(this.getClass().getResource("/skull.png")).getImage();
+	//problem rute
+	public Image imgCerdo 		= new ImageIcon(this.getClass().getResource("/img/cerdo.png")).getImage();
+	public Image imgCalabaza 	= new ImageIcon(this.getClass().getResource("/img/calabaza.png")).getImage();
+	public Image imgClown	 	= new ImageIcon(this.getClass().getResource("/img/clown.png")).getImage();
+	public Image imgFranki	 	= new ImageIcon(this.getClass().getResource("/img/franki.png")).getImage();
+	public Image imgMinion	 	= new ImageIcon(this.getClass().getResource("/img/minion.png")).getImage();
+	public Image imgMummy	 	= new ImageIcon(this.getClass().getResource("/img/mummy.png")).getImage();
+	public Image imgSeta	 	= new ImageIcon(this.getClass().getResource("/img/seta.png")).getImage();
+	public Image imgSkull	 	= new ImageIcon(this.getClass().getResource("/img/skull.png")).getImage();
 	
 	public CartaClass cardCerdo, cardCalabaza, cardClown, cardFranki, cardMinion, cardMummy, cardSeta, cardSkull;
 	public CartaClass cardCerdo2, cardCalabaza2, cardClown2, cardFranki2, cardMinion2, cardMummy2, cardSeta2, cardSkull2;

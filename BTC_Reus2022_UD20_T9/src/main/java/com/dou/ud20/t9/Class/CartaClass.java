@@ -17,7 +17,7 @@ import javax.swing.JToggleButton;
 public class CartaClass extends JToggleButton{
 	
 	
-	public Image imgInit 	= new ImageIcon(this.getClass().getResource("/card.png")).getImage();
+	public Image imgInit 	= new ImageIcon(this.getClass().getResource("/img/card.png")).getImage();
 	public ImageIcon imgInitScaled;
 	//public Image imgFlip;
 	public ImageIcon imgFlipScaled;
