@@ -21,7 +21,7 @@ public class View {
 	private JFrame frame;
 	private final int WIDTH=100;
 	private final int HEIGHT=100;
-	public Image imgCerdo 		= new ImageIcon(this.getClass().getResource("//cerdo.png")).getImage();
+	public Image imgCerdo 		= new ImageIcon(this.getClass().getResource("/cerdo.png")).getImage();
 	public Image imgCalabaza 	= new ImageIcon(this.getClass().getResource("/calabaza.png")).getImage();
 	public Image imgClown	 	= new ImageIcon(this.getClass().getResource("/clown.png")).getImage();
 	public Image imgFranki	 	= new ImageIcon(this.getClass().getResource("/franki.png")).getImage();
