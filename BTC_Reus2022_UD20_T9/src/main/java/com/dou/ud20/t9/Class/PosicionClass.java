@@ -1,14 +1,8 @@
 package com.dou.ud20.t9.Class;
 
-public class PositionClass {
-	
-	int alto;
-	int ancho;
-	
-	public PositionClass(int alto, int ancho) {
-		this.alto = alto;
-		this.ancho = ancho;
-	}
+public class PosicionClass {
+	//TODO: DAVID objeto posiciones
+
 
 	public int getAlto() {
 		return alto;
