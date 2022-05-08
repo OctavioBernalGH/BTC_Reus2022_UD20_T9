@@ -12,7 +12,9 @@
  
  [comment]: <> (### Ejercicios SQL Unidad UD16<hr>)
 
-
+[![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white&labelColor=101010)]()
+[![GitHub](https://img.shields.io/badge/GITHUB-%20-yellow)]()
+<br>
 Este ejercicio ha sido realizado por los miembros del equipo 1. Dicho equipo esta formado por:
 
   [- J.Oriol López Bosch](https://github.com/mednologic)<br>
@@ -533,6 +535,18 @@ public class PosicionClass {
 } 
   ```
  </details>
- <br>
 
+Para este proyecto hemos utilizado las imagenes creadas por [- J.Oriol López Bosch](https://github.com/mednologic) utilizando la página icon-icons y el fondo de canva. Las imagenes que se han utilizado son las siguientes:
+	
+![cerdo](https://user-images.githubusercontent.com/103035621/167309262-0d0cbf93-dd6d-446a-b171-2689dead40e0.png)
+![clown](https://user-images.githubusercontent.com/103035621/167309263-b570f8dc-3cef-4f11-8811-74043aa36e14.png)
+![franki](https://user-images.githubusercontent.com/103035621/167309264-2c7b8693-7da5-430d-a0b7-ac56d5f5f6ec.png)
+![minion](https://user-images.githubusercontent.com/103035621/167309265-9dd2cb65-36f8-4805-a4f4-3cfcc7ca09d6.png)
+![mummy](https://user-images.githubusercontent.com/103035621/167309267-421f9e19-b9a5-48b6-b3d1-9d29160c329a.png)
+![seta](https://user-images.githubusercontent.com/103035621/167309268-8926d0d8-af00-4969-a513-61a86e20abb7.png)
+![skull](https://user-images.githubusercontent.com/103035621/167309269-b74894b6-bbd3-44f5-b3b8-8327ff9f014c.png)
+![calabaza](https://user-images.githubusercontent.com/103035621/167309270-ff7e661d-16b6-4a46-9c96-a1f549895f13.png)
+![card](https://user-images.githubusercontent.com/103035621/167309272-58e75799-6806-4090-a405-54c2a530a76d.png)
+	
+	
 <p align="justify">En este ejercicio se aprende una mejor estructura de proyecto utilizando la tecnología Maven. Cuando se comienza un proyecto mediante Maven se observa una mayor eficiencia a la hora de generar código, el cuál repercute directamente y de forma positivia en los tiempos de trabajo. También se practica el uso de ficheros externos como pueden ser las imagenes y su manipulación y uso mediante ruta absoluta de proyecto, esto permite que cualquier persona que se descargue este ejercicio pueda utilizar todas las funcionalidades.</p>  
