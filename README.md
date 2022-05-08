@@ -499,7 +499,7 @@ public class View {
 <details>
   <summary>Clase PosicionClass.java</summary>
 <br>
-<p align="justify">La clase PosicionClass es la clase encargada del posicionamiento de los componentes de la vista referente a las cartas. Esta clase se utiliza para ayudar a construir la lista de los componentes que forman la vista.</p>
+<p align="justify">La clase PosicionClass es la clase encargada del posicionamiento de los componentes de la vista referente a las cartas. Esta clase se utiliza para ayudar a construir la lista de los componentes que forman la vista utilizando el alto y ancho de las imagenes..</p>
   
   ```java
 package com.dou.ud20.t9.Class;
