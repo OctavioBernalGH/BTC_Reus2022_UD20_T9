@@ -1,11 +1,11 @@
 package com.dou.ud20.t9.Class;
 
-public class PositionClass {
+public class PosicionClass {
 	
 	int alto;
 	int ancho;
 	
-	public PositionClass(int alto, int ancho) {
+	public PosicionClass(int alto, int ancho) {
 		this.alto = alto;
 		this.ancho = ancho;
 	}
