@@ -533,9 +533,6 @@ public class PosicionClass {
 } 
   ```
  </details>
-
-
-
  <br>
 
-  
+<p align="justify">En este ejercicio se aprende una mejor estructura de proyecto utilizando la tecnología Maven. Cuando se comienza un proyecto mediante Maven se observa una mayor eficiencia a la hora de generar código, el cuál repercute directamente y de forma positivia en los tiempos de trabajo. También se practica el uso de ficheros externos como pueden ser las imagenes y su manipulación y uso mediante ruta absoluta de proyecto, esto permite que cualquier persona que se descargue este ejercicio pueda utilizar todas las funcionalidades.</p>  
