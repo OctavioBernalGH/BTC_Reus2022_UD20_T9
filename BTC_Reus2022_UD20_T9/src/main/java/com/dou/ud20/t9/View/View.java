@@ -11,6 +11,7 @@ import java.util.List;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 import com.dou.ud20.t9.Class.CartaClass;
 import com.dou.ud20.t9.Class.PosicionClass;
@@ -20,7 +21,7 @@ public class View {
 	private JFrame frame;
 	private final int WIDTH=100;
 	private final int HEIGHT=100;
-	public Image imgCerdo 		= new ImageIcon(this.getClass().getResource("/cerdo.png")).getImage();
+	public Image imgCerdo 		= new ImageIcon(this.getClass().getResource("//cerdo.png")).getImage();
 	public Image imgCalabaza 	= new ImageIcon(this.getClass().getResource("/calabaza.png")).getImage();
 	public Image imgClown	 	= new ImageIcon(this.getClass().getResource("/clown.png")).getImage();
 	public Image imgFranki	 	= new ImageIcon(this.getClass().getResource("/franki.png")).getImage();
@@ -259,6 +260,76 @@ public class View {
 			counter++;
 		}	
 	}
+	//Recibe la carta cliqueada y acciona el caso correspondiente
+		public void jugada (CartaClass cartaActiva) {
+
+			switch(contadorCartasDestapadas) {
+			
+			case 1:	
+				if(!cartaActiva.isBlockCard()) {
+					//Seteamos la carta acionada en el array comparador
+					compararCartas[0]= cartaActiva;
+					cartaActiva.flipCard();
+					contadorCartasDestapadas++;
+				}
+				break;
+			case 2:
+				if(!cartaActiva.isBlockCard()) {
+					//Seteamos la carta acionada en el array comparador
+					compararCartas[1]= cartaActiva;
+					cartaActiva.flipCard();
+					
+					//Si las cartas son iguales las bloqueamos
+					if(compararCartas[0].getId().equals(compararCartas[1].getId())) {
+						compararCartas[0].setBlockCard(true);
+						compararCartas[1].setBlockCard(true);
+						contadorParejas++;
+						if(contadorParejas==8) {
+							JOptionPane.showMessageDialog(null, "Felicidades, Has Ganado");
+						}
+					}else {
+						//Seteamos en false las cartas activas comparadas
+						compararCartas[0].setSelected(false);
+						compararCartas[1].setSelected(false);	
+					}
+
+					contadorCartasDestapadas++;	
+				}
+				break;
+				
+			case 3:// Gira las cartas y llama al caso 1
+				
+				//Borramos las cartas del comparador
+				compararCartas[0]= null;
+				compararCartas[1]= null;
+				
+				//loop para girar todas las cartas menos las bloqueadas
+				for(CartaClass carta: listaCartas) {
+					if(!carta.isBlockCard()) {
+						if(!carta.isSelected()) {
+							carta.flipCard();
+							carta.setSelected(false);
+						}
+						
+					}
+				}
+				contadorCartasDestapadas=1;
+				//Llamamos internamente a la funcion pero con el caso 1
+				jugada(cartaActiva);
+				break;
+			}
+		}
+		public void nuevaPartida() {
+			//Reseteamos el juego
+			for(CartaClass carta : listaCartas) {
+				carta.flipCard();
+				carta.setBlockCard(false);
+				carta.setSelected(false);
+			}
+			contadorParejas=0;
+			//Randomizamos posiciones
+			randomicePositions();
+		}
 
 }
 	
