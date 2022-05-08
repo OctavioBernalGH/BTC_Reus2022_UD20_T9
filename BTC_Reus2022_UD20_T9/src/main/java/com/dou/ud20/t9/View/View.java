@@ -9,6 +9,7 @@ import java.util.Collections;
 import java.util.List;
 
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 
 import com.dou.ud20.t9.Class.CartaClass;
@@ -221,6 +222,25 @@ public class View {
 						jugada(cardSkull2);	
 					}
 				});
+				
+				frame = new JFrame();
+				frame.setBounds(100, 100, 602, 503);
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				frame.getContentPane().setLayout(null);
+				
+				randomicePositions();
+
+				frame.getContentPane().add(cardCerdo);
+				
+				JButton btnNuevaPartida = new JButton("NuevaPartida");
+				btnNuevaPartida.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						nuevaPartida();
+					}
+				});
+				btnNuevaPartida.setBounds(465, 18, 117, 29);
+				frame.getContentPane().add(btnNuevaPartida);
+
 
 }
 	public void randomicePositions() {
